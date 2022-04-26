@@ -173,6 +173,7 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_M4DEFS += \
     persist_camera_prop=vendor_persist_camera_prop
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/power-libperfmgr
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
