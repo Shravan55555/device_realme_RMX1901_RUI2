@@ -363,10 +363,12 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
-    android.hardware.power@1.2.vendor \
-    libqti-perfd-client \
-    vendor.qti.hardware.perf@2.0.vendor
+    android.hardware.power-service.RMX1901-libperfmgr \
+    android.hardware.power.stats@1.0-service.pixel
+
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
