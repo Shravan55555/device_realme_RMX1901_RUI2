@@ -441,12 +441,6 @@
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "PowerHALRenderingState",
-      "Duration": 0,
-      "Value": "EXPENSIVE_RENDERING"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
       "Value": "430000000"
