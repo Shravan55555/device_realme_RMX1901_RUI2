@@ -34,18 +34,18 @@ cc_library {
 }
 
 // Deprecated, do not use
-// Use r5x-power-ext for vendor extension
+// Use RMX1901-power-ext for vendor extension
 cc_library_headers {
-    name: "r5x_power_headers",
+    name: "RMX1901_power_headers",
     vendor: true,
     export_include_dirs: ["hidl"],
 }
 
 cc_binary {
-    name: "android.hardware.power-service.r5x-libperfmgr",
+    name: "android.hardware.power-service.RMX1901-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.r5x-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.r5x.xml"],
+    init_rc: ["aidl/android.hardware.power-service.RMX1901-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.RMX1901.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V2-ndk_platform",
@@ -54,7 +54,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-r5x",
+        "libdisppower-RMX1901",
         "libperfmgr",
         "libprocessgroup",
         "pixel-power-ext-V1-ndk_platform",
