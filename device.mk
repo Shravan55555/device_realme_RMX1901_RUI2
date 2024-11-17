@@ -487,7 +487,6 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Thermal
-$(call soong_config_set,qti_thermal,netlink,false)
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
